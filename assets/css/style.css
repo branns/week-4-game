@@ -1,0 +1,38 @@
+body {
+	background-image: url("http://i290.photobucket.com/albums/ll279/rtmagical/imvu%20backgrounds/sparkling-diamonds.gif")
+}
+#gname {
+	color: white;
+	background-color: black;
+	height: 100px;
+	text-align: center;
+}
+#inst {
+	color: white;
+	background-color: black;
+	font-size: 15px;
+	font-weight: bold;
+	margin: none;
+}
+#wlcnt {
+	background-color: #c036ec;
+	width: 150px;
+	height: 100px;
+}
+#gemCounter {
+	background-color: #c036ec;
+	width: 200px;
+	height: 100px;
+}
+button {
+	background-color: transparent;
+	border: transparent;
+}
+#userGemCounter, #gemcnt {
+	background-color: black;
+	color: white;
+	font-weight: bold;
+}
+#userGemCounter {
+	height: 200px;
+}

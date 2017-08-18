@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jewel Game</title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div id="gname" class="col-md-6">
+				<h1>Crystals Collector!</h1>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div id="inst" class="col-md-6">
+				<p>You will be given a random number at the start of the game.</p>
+				<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+				<p>You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.</p>
+				<p>The value of each crystal is hidden from you until you click on it.</p>
+				<p>Each time when the game starts, the game will change the values of each crystal.</p>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div id="gemCounter" class="col-md-3">
+				<p><span id="crysCounter">0</span></p>
+			</div>
+			<div class="col-md-1"></div>
+			<div id="wlcnt" class="col-md-2">
+				<p>Wins:<span id='winCount'>0</span></p>
+				<p>Losses:<span id='loseCount'>0</span></p>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div id="gems" class="col-md-6">
+				<button class="gems">
+				<img src="./assets/images/diamond_gem.gif" height="110px">
+				</button>
+				<button class="gems">
+				<img src="./assets/images/quartz_gem.gif" height="110px">
+				</button>
+				<button class="gems">
+				<img src="./assets/images/emerald_gem.gif" height="110px">
+				</button>
+				<button class="gems">
+				<img src="./assets/images/fabulous_gem.gif" height="110px">
+				</button>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div id="gemcnt" class="col-md-6">
+				<h3>Your crystal count: </h3>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div id="rndnum" class="col-md-6">
+				<p id="userGemCounter"><span id="userTotal">0</span></p>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./assets/javascript/game.js"></script>
+</body>
+</html>
