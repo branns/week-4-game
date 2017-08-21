@@ -16,9 +16,6 @@ var userCrysCounter = 0;
 var wins = 0;
 var losses = 0;
 
-//appending to html
-$('#winCount').html(wins);
-$('#loseCount').html(losses);
 //game start and reset
 function reset(){
 	crysCounter = Math.floor(Math.random() * 102 + 19);
@@ -41,9 +38,11 @@ $('#diamond').on("click", function() {
 	$('#userTotal').html(userCrysCounter); //
 	if (userCrysCounter === crysCounter) {
 		wins ++;
+		$('#winCount').html(wins);
 		reset ();
 	} else if (userCrysCounter > crysCounter) {
 		losses ++;
+		$('#loseCount').html(losses);
 		reset ();
 	} 
 });
@@ -54,9 +53,11 @@ $('#quartz').on("click", function() {
 	$('#userTotal').html(userCrysCounter);
 	if (userCrysCounter === crysCounter) {
 		wins ++;
+		$('#winCount').html(wins);
 		reset ();
 	} else if (userCrysCounter > crysCounter) {
 		losses ++;
+		$('#loseCount').html(losses);
 		reset ();
 	} 
 });
@@ -66,9 +67,11 @@ $('#emerald').on("click", function () {
 	$('#userTotal').html(userCrysCounter);
 	if (userCrysCounter === crysCounter) {
 		wins ++;
+		$('#winCount').html(wins);
 		reset ();
 	} else if (userCrysCounter > crysCounter){
 		losses ++;
+		$('#loseCount').html(losses);
 		reset ();
 	} 
 });
@@ -78,9 +81,11 @@ $('#fabulous').on("click", function () {
 	$('#userTotal').html(userCrysCounter);
 	if (userCrysCounter === crysCounter) {
 		wins ++;
+		$('#winCount').html(wins);
 		reset ();
 	} else if (userCrysCounter > crysCounter){
 		losses ++;
+		$('#loseCount').html(losses);
 		reset ();
 	} 
 });
