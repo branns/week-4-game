@@ -6,8 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Jewel Game</title>
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -34,30 +35,36 @@
 		</div>
 		<div class="row">
 			<div class="col-md-3"></div>
-			<div id="gemCounter" class="col-md-3">
-				<p><span id="crysCounter">0</span></p>
+			<div id="counter" class="col-md-3">
+				<h3>
+				<span id="random">0</span>
+				</h3>
 			</div>
 			<div class="col-md-1"></div>
 			<div id="wlcnt" class="col-md-2">
-				<p>Wins:<span id='winCount'>0</span></p>
-				<p>Losses:<span id='loseCount'>0</span></p>
+				<h3>Wins:
+					<span id="winCount"></span>
+					</br>
+					Losses:
+					<span id="loseCount"></span>
+				</h3>
 			</div>
 			<div class="col-md-3"></div>
 		</div>
 		<div class="row">
 			<div class="col-md-3"></div>
-			<div id="gems" class="col-md-6">
-				<button class="gems">
-				<img src="./assets/images/diamond_gem.gif" height="110px">
+			<div class="col-md-6">
+				<button id="diamond">
+				<img src="./assets/images/diamond_gem.gif" height="110px" alt="diamond_gem">
 				</button>
-				<button class="gems">
-				<img src="./assets/images/quartz_gem.gif" height="110px">
+				<button id="quartz">
+				<img src="./assets/images/quartz_gem.gif" height="110px" alt="quartz_gem">
 				</button>
-				<button class="gems">
-				<img src="./assets/images/emerald_gem.gif" height="110px">
+				<button id="emerald">
+				<img src="./assets/images/emerald_gem.gif" height="110px" alt="emerald_gem">
 				</button>
-				<button class="gems">
-				<img src="./assets/images/fabulous_gem.gif" height="110px">
+				<button id="fabulous">
+				<img src="./assets/images/fabulous_gem.gif" height="110px" alt="fabulous_gem">
 				</button>
 			</div>
 			<div class="col-md-3"></div>
@@ -72,7 +79,9 @@
 		<div class="row">
 			<div class="col-md-3"></div>
 			<div id="rndnum" class="col-md-6">
-				<p id="userGemCounter"><span id="userTotal">0</span></p>
+				<h3>Total:
+				<span id="userTotal">0</span>
+				</h3>
 			</div>
 			<div class="col-md-3"></div>
 		</div>

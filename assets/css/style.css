@@ -19,7 +19,7 @@ body {
 	width: 150px;
 	height: 100px;
 }
-#gemCounter {
+#counter {
 	background-color: #c036ec;
 	width: 200px;
 	height: 100px;
@@ -28,11 +28,13 @@ button {
 	background-color: transparent;
 	border: transparent;
 }
-#userGemCounter, #gemcnt {
+#gemcnt {
+	color: white;
+}
+#rndnum {
+	height: 100px;
 	background-color: black;
 	color: white;
 	font-weight: bold;
-}
-#userGemCounter {
-	height: 200px;
+	font-size: 50px;
 }
